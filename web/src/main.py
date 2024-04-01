@@ -31,7 +31,7 @@ class User(Base):
 
 @app.get("/")
 def index():
-    return{"message":"Hello from fast api x Docker Compose!!"}
+    return{"message":"Hello from fast api x Docker Compose!! #1"}
 
 @app.get("users")
 def users():
