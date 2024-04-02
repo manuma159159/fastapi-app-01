@@ -6,6 +6,8 @@ from sqlalchemy import Column,Integer,String
 from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI()
+instrumentator = Instrumentator()
+instrumentator.instrument(app).expose(app)
 
 host = "db"
 user = "fauser"
